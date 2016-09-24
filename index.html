@@ -5,16 +5,16 @@
 </head>
 <body>
 <h1>Welcome</h1>
-
-<li><input type="datetime"></li>
-<li><input maxlength="50" size="40" value="Location:"></li>
-<li>Amount:</li>
-<li><input maxlength="50" size="40" value="Comment:"></li>
-<p><input type="button" value="Save"></p>
- 
-<script></script>
-
-
-
+<form>
+<label>Date<input id="datetime" type="date"></label>
+<p/>
+<label>Location <input id="location" maxlength="50" size="40"></label>
+<p/>
+<label>Amount <input id="amount" type="number" min="1" step="any"/></label>
+<p/>
+<label>Comment <input id="comment" maxlength="50" size="40"></label>
+<p/>
+<p><input type="submit" value="Save" ></p>
+</form>
 </body>
 </html>
