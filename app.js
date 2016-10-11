@@ -1,2 +1,11 @@
-var http = require("http");
+var express = require("express");
+var app = express();
+
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+app.post('/', function (req, res) {
+  res.send('POST request to the homepage');
+});
 console.log("Helo World");
